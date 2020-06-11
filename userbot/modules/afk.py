@@ -244,19 +244,19 @@ async def afk_on_pm(sender):
                 afk_since = f"`{int(seconds)}s` **ago**"
             if sender.sender_id not in USERS:
                 if AFKREASON:
-                    await sender.reply(f"My Master **{DEFAULTUSER}** Is **afk since** {afk_since}.\
-                        \n**Because my master is** `{AFKREASON}`")
+                    await sender.reply(f"My Owner **{DEFAULTUSER}** Is **afk since** {afk_since}.\
+                        \n**Because he is** `{AFKREASON}`")
                 else:
-                    await sender.replyf(f"My master 👑 {DEFAULTUSER} 👑 is **afk Since** {afk_since}.\nand My master has left a word for you only: \n{AFKSK}\n`.` ")
+                    await sender.replyf(f"My Owner 👑 {DEFAULTUSER} 👑 is **afk Since** {afk_since}.\nand My Owner has left a word for you only: \n{AFKSK}\n`.` ")
                 USERS.update({sender.sender_id: 1})
                 COUNT_MSG = COUNT_MSG + 1
             elif apprv and sender.sender_id in USERS:
                 if USERS[sender.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await sender.reply(f"My Master **{DEFAULTUSER}** Is {AFKREASON}.\
+                        await sender.reply(f"My Owner **{DEFAULTUSER}** Is {AFKREASON}.\
                             \n**Since** `{afk_since}`")
                     else:
-                        await sender.reply(f"My master 👑 {DEFAULTUSER} 👑 is **afk Since** {afk_since}.\nand My master has left a word for you only: \n{AFKSK}\n`.` ")
+                        await sender.reply(f"My Owner 👑 {DEFAULTUSER} 👑 is **afk Since** {afk_since}.\nand My Owner has left a word for you only: \n{AFKSK}\n`.` ")
                     USERS[sender.sender_id] = USERS[sender.sender_id] + 1
                     COUNT_MSG = COUNT_MSG + 1
                 else:
