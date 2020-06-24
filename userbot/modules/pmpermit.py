@@ -17,10 +17,10 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 UNAPPROVED_MSG = (
-    "`Hey! Are you really here because I allowed you ? .\n\n`"
-    "`If you're not a expected person in my DM's, please ask or tag me in the group`"
-    "`Type in the fuckin' reason why are you here ? \n\n`"
-    "`Until then, don't spam mothafucka, you'll get blocked and reported if you do so! K THANKS BYE`")
+    "`Hey! This is a private space of @DEDASFUCK. .\n\n`"
+    "`Do you remember people used to shoot people in the head when they used to trespass around ?`"
+    "`Kinda' Watch your steps before I accept you in my PM's or KABOOOM !\n\n`"
+    "`You'll get into the shithole full of spammers. K THANKS BYE.`")
 # =================================================================
 
 
@@ -69,8 +69,8 @@ async def permitpm(event):
 
                 if COUNT_PM[event.chat_id] > 4:
                     await event.respond(
-                        "`You were spamming my Mastor's PM, which I didn't like.`\n"
-                        "`You have been BLOCKED and reported as SPAM, until further notice.`"
+                        "`You were spamming Yash's PM, which I didn't like.`\n"
+                        "`You have been BLOCKED and reported, Die in the shithole you smartass.`"
                     )
 
                     try:
@@ -185,7 +185,7 @@ async def approvepm(apprvpm):
         await apprvpm.edit("`User may already be approved.`")
         return
 
-    await apprvpm.edit(f"[{name0}](tg://user?id={uid}) `approved to PM!`")
+    await apprvpm.edit(f"[{name0}](tg://user?id={uid}) `Welcome to my Pm's. Now you're expected to be a good friend and avoid being a SNAKE`")
 
     async for message in apprvpm.client.iter_messages(apprvpm.chat_id,
                                                       from_user='me',
