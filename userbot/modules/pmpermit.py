@@ -17,7 +17,7 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 UNAPPROVED_MSG = (
-    "`Hey! This is a private space of @DEDASFUCK. .\n\n`"
+    "`Hey! This is a private space of @kunalshah. .\n\n`"
     "`Do you remember people used to shoot people in the head when they used to trespass around ?`"
     "`Kinda' Watch your steps before I accept you in my PM's or KABOOOM !\n\n`"
     "`You'll get into the shithole full of spammers. K THANKS BYE.`")
